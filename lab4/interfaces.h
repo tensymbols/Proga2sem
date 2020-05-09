@@ -17,7 +17,7 @@ public:
 class IPhysObject {
 public:
 
-	virtual double mass() = 0;
+	virtual double mass() const = 0;
 
 	virtual CVector2D position() = 0; // центр масс
 
