@@ -1,11 +1,16 @@
 #pragma once
+#include <iostream>
+#include <vector>
+
+using std::cout;
+using std::cin;
 
 class IGeoFig {
 public:
 	
-	virtual double area() = 0;
+	virtual double area() const = 0;
 
-	virtual double perimeter() = 0;
+	virtual double perimeter() const = 0;
 };
 
 class CVector2D {
@@ -19,7 +24,7 @@ public:
 
 	virtual double mass() const = 0;
 
-	virtual CVector2D position() = 0; // центр масс
+	virtual CVector2D position() const = 0; // центр масс
 
 	virtual bool operator== (const IPhysObject& ob) const = 0;
 
@@ -29,7 +34,7 @@ public:
 class IPrintable {
 public:
 
-	virtual void draw() = 0;
+	virtual void draw() const = 0;
 };
 
 class IDialogInitiable {
@@ -40,7 +45,7 @@ class IDialogInitiable {
 class BaseCObject {
 public:
 
-	virtual const char* classname() = 0;
+	virtual const char* classname() const = 0;
 
 	virtual unsigned int size() = 0;
-};
+};

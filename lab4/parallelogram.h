@@ -1,27 +1,29 @@
 #pragma once
-#include <vector>
+
 #include "interfaces.h"
 
 class Parallelogram : public IGeoFig, public CVector2D,
 public IPhysObject, public IPrintable, public IDialogInitiable, public BaseCObject {
 public:
-	Parallelogram(const CVector2D&, const CVector2D&, const CVector2D&);
-	double area();
-	double perimeter();
-	double mass() const;
-	CVector2D Position();
+	
+	double area() const override ;
+	double perimeter() const override;
+	double mass() const override;
+	CVector2D position() const override;
 
 	bool operator==(const IPhysObject&) const;
 	bool operator<(const IPhysObject&) const;
 
-	void draw();
+	void draw() const override;
 
-	void initFromDialog();
+	void initFromDialog() override;
 
-	const char* classname();
+	const char* classname() const override;
 
-	unsigned int size();
+	unsigned int size() override;
 
+private:
 	CVector2D points[4];
-
+	
+	double density;
 };
