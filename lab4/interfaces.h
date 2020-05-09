@@ -4,6 +4,7 @@
 
 using std::cout;
 using std::cin;
+using std::vector;
 
 class IGeoFig {
 public:
@@ -47,5 +48,10 @@ public:
 
 	virtual const char* classname() const = 0;
 
-	virtual unsigned int size() = 0;
+	virtual unsigned int size() const = 0;
+};
+
+class Figure : public IGeoFig,  public CVector2D,
+	 public IPhysObject,  public IPrintable,  public IDialogInitiable,  public BaseCObject {
+
 };

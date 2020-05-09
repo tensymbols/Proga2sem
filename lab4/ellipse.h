@@ -2,10 +2,10 @@
 
 #include "interfaces.h"
 
-class Parallelogram : public Figure {
+class Ellipse : public Figure {
 public:
-	
-	double area() const override ;
+
+	double area() const override;
 	double perimeter() const override;
 	double mass() const override;
 	CVector2D position() const override;
@@ -22,7 +22,9 @@ public:
 	unsigned int size() const override;
 
 private:
-	CVector2D points[4];
-	
+	CVector2D center;
+	double r1;
+	double r2;
+
 	double density;
 };

@@ -18,10 +18,13 @@
     <ClCompile Include="parallelogram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ellpise.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="ellipse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fsystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,10 +32,13 @@
     <ClInclude Include="parallelogram.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ellpise.h">
+    <ClInclude Include="interfaces.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="interfaces.h">
+    <ClInclude Include="ellipse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fsystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

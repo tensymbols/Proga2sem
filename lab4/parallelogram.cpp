@@ -3,7 +3,7 @@
 
 void Parallelogram::initFromDialog() 
 {
-	cout << "Для инициализации параллелограмма необходимо ввести три координаты трех его точек — \n первой, второй и четвертой(по часовой стрелке)\nКоординаты третьей точки будут вычислены.\n";
+	cout << "Для инициализации параллелограмма необходимо ввести три координаты трех его точек — \nпервой, второй и четвертой(по часовой стрелке)\nКоординаты третьей точки будут вычислены.\n";
 	CVector2D p1;
 	cout << "Введите x, y для 1ой точки:";
 	cin >> p1.x >> p1.y;
@@ -77,15 +77,17 @@ bool Parallelogram::operator<(const IPhysObject& obj) const
 
 void Parallelogram::draw() const
 {
+	cout << classname() << " "<< size() <<" bytes\n";
+	cout << "X, Y:" << x << " " << y<<"\n";
 	cout << "Площадь: " << area() << "\n";
-	cout << "Периметр: " << area() << "\n";
+	cout << "Периметр: " << perimeter() << "\n";
 	cout << "Плотность: " << density << "\n";
 	cout << "Масса: "<< mass()<<"\n";
 	CVector2D pos = position();
 	cout << "Центр масс: " << pos.x <<" "<< pos.x << "\n";
 	for (size_t i = 0; i <= 3; i++)
 	{
-		cout << "Координаты " << i+1 << "точки: " << points[i].x << " " << points[i].y << "\n";
+		cout << "Координаты " << i+1 << " точки: " << points[i].x << " " << points[i].y << "\n";
 	}
 }
 
@@ -94,7 +96,7 @@ const char* Parallelogram::classname() const
 	return ("Parallelogram");
 }
 
-unsigned int Parallelogram::size()
+unsigned int Parallelogram::size() const
 {
 	return sizeof(Parallelogram);
 }
