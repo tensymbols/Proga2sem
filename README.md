@@ -6,3 +6,4 @@
 3. [lab3](https://github.com/tensymbols/Proga2sem/tree/master/lab3)
 
 
+4-7 в соответствующей ветке
