@@ -34,8 +34,8 @@ double Parallelogram::area() const
 	double x1 = points[1].x - x; double y1 = points[1].y - y;
 	double x2 = points[3].x - x; double y2 = points[3].y - y;
 
-	double len1 = sqrt( pow(x1, 2) + pow(y1, 2) );
-	double len2 = sqrt( pow(x2, 2) + pow(y2, 2) );
+	double len1 = sqrt( x1*x1 + y1*y1);
+	double len2 = sqrt( x2*x2 + y2*y2);
 
 	double scalarMult =x1 *x2 + y1*y2;
 	double lengthMult =  len1*len2 ;

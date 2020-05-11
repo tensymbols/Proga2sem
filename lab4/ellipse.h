@@ -23,8 +23,8 @@ public:
 
 private:
 	CVector2D center;
-	double r1;
-	double r2;
+	double r1=0.0;
+	double r2=0.0;
 
-	double density;
+	double density=0.0;
 };

@@ -24,5 +24,5 @@ public:
 private:
 	CVector2D points[4];
 	
-	double density;
+	double density=0.0;
 };

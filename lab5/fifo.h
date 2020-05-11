@@ -4,10 +4,10 @@
 #include <vector>
 
 
-template <class T>
+template <int N, class T>
 class FIFO {
 private:
-
+	int maxSize = N;
 	std::vector<T> data;
 public:
 	void push(const T& element) {
@@ -20,4 +20,3 @@ public:
 		return data[data.size() - 1];
 	}
 };
-

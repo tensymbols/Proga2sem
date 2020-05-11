@@ -3,5 +3,5 @@
 
 int main() {
 
-	FIFO<int>  f;
+	FIFO<100,int>  f;
 }
