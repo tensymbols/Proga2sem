@@ -9,6 +9,7 @@ public:
 	void operator>>(int num);
 	void operator<<(int &num);
 	void Pop();
+	bool isEmpty();
 private:
 	vector<int> Queue;
 	const int maxSize = 100;

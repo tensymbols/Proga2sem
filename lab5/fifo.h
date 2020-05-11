@@ -1,13 +1,23 @@
 #pragma once
+
+#pragma once
 #include <vector>
 
-template <typename T>
+
+template <class T>
 class FIFO {
 private:
 
-	std::vector<T> qeueue;
+	std::vector<T> queue;
 public:
-	void push(const T&);
-	void pop();
-	const& get();
+	void push(const T&) {
+
+	}
+	void pop() {
+
+	}
+	const T& top() {
+
+	}
 };
+

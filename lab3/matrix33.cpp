@@ -19,11 +19,11 @@ void matrix33::printMatrix()
 	{
 		for (int j = 0; j < mWidth; j++)
 		{
-			cout << mx[i][j] << " ";
+			std::cout << mx[i][j] << " ";
 		}
-		cout << endl;
+		std::cout << std::endl;
 	}
-	cout << endl;
+	std::cout << "\n";
 }
 
 
@@ -32,7 +32,7 @@ matrix33::matrix33()  {
 	mx = vector<vector<double>>(mHeight, vector<double>(mWidth, 0.0));
 }
 
-matrix33 matrix33::operator+(matrix33& obj)
+matrix33 matrix33::operator+(matrix33 obj)
 {
 	matrix33 add;
 	double firstval;
@@ -51,7 +51,7 @@ matrix33 matrix33::operator+(matrix33& obj)
 	return add;
 }
 
-matrix33 matrix33::operator-(matrix33& obj)
+matrix33 matrix33::operator-(matrix33 obj)
 {
 	matrix33 sub;
 	double firstval;
@@ -69,7 +69,7 @@ matrix33 matrix33::operator-(matrix33& obj)
 
 	return sub;
 }
-matrix33 matrix33::operator*(matrix33& obj)
+matrix33 matrix33::operator*(matrix33 obj)
 {
 	matrix33 mult;
 
@@ -89,12 +89,13 @@ matrix33 matrix33::operator*(matrix33& obj)
 
 matrix33 matrix33::operator*(const double num)
 {
+	matrix33 mult;
 	for (size_t i = 0; i < mHeight; i++)
 	{
 		for (size_t j = 0; j < mWidth; j++)
 		{
-			mx[i][j] *= num;
+			mult.mx[i][j]= mx[i][j] * num;
 		}
 	}
-	return *this;
+	return mult;
 }

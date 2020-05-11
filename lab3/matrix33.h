@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <iostream>
-using namespace std;
+using std::vector;
 
 class matrix33 {
 private:
@@ -16,8 +16,8 @@ public:
 	void SetValue(int,int,double);
 	double GetValue(int, int);
 	void printMatrix();
-	matrix33 operator +(matrix33& obj);
-	matrix33 operator -(matrix33& obj);
-	matrix33 operator *(matrix33& obj);
+	matrix33 operator +(matrix33 obj);
+	matrix33 operator -(matrix33 obj);
+	matrix33 operator *(matrix33 obj);
 	matrix33 operator *(const double);
 };
