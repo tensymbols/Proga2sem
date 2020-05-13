@@ -12,7 +12,7 @@ private:
 	std::vector<T> data;
 public:
 	void push(const T& element) {
-		if (data.size() + 1 > maxSize) {
+		if (data.size() == maxSize) {
 			throw qOverflow();
 		}
 		data.push_back(element);
@@ -28,6 +28,8 @@ public:
 			throw qEmpty();
 		}
 		return data[data.size() - 1];
+	}
+	~FIFO() noexcept {
 	}
 };
 

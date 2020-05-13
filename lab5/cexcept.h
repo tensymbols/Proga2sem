@@ -3,7 +3,7 @@
 
 
 struct queueExcept : public std::exception {
-
+	queueExcept(std::string);
 	virtual const char* what();
 };
 
