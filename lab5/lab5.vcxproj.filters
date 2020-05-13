@@ -18,9 +18,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cexcept.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fifo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="maxelement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cexcept.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
