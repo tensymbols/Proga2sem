@@ -20,4 +20,6 @@ public:
 	matrix33 operator -(matrix33 obj);
 	matrix33 operator *(matrix33 obj);
 	matrix33 operator *(const double);
+	bool operator ==(const matrix33&);
+	bool operator !=(const matrix33&);
 };

@@ -99,3 +99,13 @@ matrix33 matrix33::operator*(const double num)
 	}
 	return mult;
 }
+
+bool matrix33::operator==(const matrix33& obj)
+{
+	return (mx == obj.mx);
+}
+
+bool matrix33::operator!=(const matrix33& obj)
+{
+	return !(mx == obj.mx);
+}
