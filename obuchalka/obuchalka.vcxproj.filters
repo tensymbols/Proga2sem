@@ -15,22 +15,17 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vector2d.cpp">
+    <ClCompile Include="1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pred.cpp">
+    <ClCompile Include="3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="algo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="vector2d.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

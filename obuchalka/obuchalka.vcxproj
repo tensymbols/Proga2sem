@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{90269ADA-4BE6-4FD9-9DE0-393AE69F1D11}</ProjectGuid>
-    <RootNamespace>lab6</RootNamespace>
+    <ProjectGuid>{BB1AD662-4524-4907-B648-9962B7741B3B}</ProjectGuid>
+    <RootNamespace>obuchalka</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,13 +138,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="pred.cpp" />
-    <ClCompile Include="vector2d.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="algo.h" />
-    <ClInclude Include="vector2d.h" />
+    <ClCompile Include="2.cpp" />
+    <ClCompile Include="1.cpp" />
+    <ClCompile Include="3.cpp" />
+    <ClCompile Include="4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

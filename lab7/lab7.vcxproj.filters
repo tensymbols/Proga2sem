@@ -18,18 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vector2d.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pred.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="algo.h">
+    <ClInclude Include="iterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vector2d.h">
+    <ClInclude Include="buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
